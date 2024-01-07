@@ -7,3 +7,7 @@
 # 3 Counter
 
 # 4 Counter II
+
+# 5 Apply Transform Over Each Element in Array
+
+# 6 Filtered the Element from Array
