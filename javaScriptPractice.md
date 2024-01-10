@@ -11,3 +11,5 @@
 # 5 Apply Transform Over Each Element in Array
 
 # 6 Filtered the Element from Array
+
+# 7 Array Reduce Transformation
