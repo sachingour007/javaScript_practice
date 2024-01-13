@@ -17,6 +17,7 @@
 # 8 Function Composition =>
 
 Function composition is the process of chaining together multiple functions to form a new function.
+
 Benifits of Function Composition :
 
 1. Resuability
