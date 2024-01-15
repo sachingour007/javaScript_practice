@@ -27,3 +27,5 @@ Benifits of Function Composition :
 Blog Link : https://medium.com/@akhilanand.ak01/function-composition-in-javascript-exploring-the-power-of-compose-4114da8b9875
 
 ### 9 Return Length Of Arguments Passed
+
+### 10 Allow One Function Call.
