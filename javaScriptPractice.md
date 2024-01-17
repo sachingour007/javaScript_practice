@@ -29,3 +29,5 @@ Blog Link : https://medium.com/@akhilanand.ak01/function-composition-in-javascri
 ### 9 Return Length Of Arguments Passed
 
 ### 10 Allow One Function Call.
+
+### 11 Memoize
