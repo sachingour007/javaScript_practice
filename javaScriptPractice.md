@@ -32,4 +32,6 @@ Blog Link : https://medium.com/@akhilanand.ak01/function-composition-in-javascri
 
 ### 11 Memoize
 
-### 12 addTwoPromises.js
+### 12 addTwoPromises
+
+### 13 Sleep
