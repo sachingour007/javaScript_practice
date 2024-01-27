@@ -35,3 +35,9 @@ Blog Link : https://medium.com/@akhilanand.ak01/function-composition-in-javascri
 ### 12 addTwoPromises
 
 ### 13 Sleep
+
+### 14 CancelTimeout
+
+### 15 intervalCancelllation
+
+### 16 Promise Time Limit
