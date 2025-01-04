@@ -1,3 +1,4 @@
+/*
 const obj1 = {
   name: "sach",
   lastName: "gour",
@@ -42,15 +43,16 @@ function sum(obj) {
   }
   console.log(ansSum);
 
-  /*
+  
   for (const key in obj) {
     console.log(obj[key]);
   }
   console.log(Object.values(obj)); //access the Value of Obj and return an Array.
   console.log(Object.keys(obj)); //access the Keys of Obj and return an Array.
-  */
 }
+*/
 
+/*
 sum(salaries);
 
 const person = {
@@ -80,3 +82,30 @@ function countUniqueValues(arr) {
 }
 const ans = countUniqueValues(arr);
 console.log(ans);
+
+const user = {
+  name: "happy",
+  city: "mumbai",
+  mbo: 123456,
+};
+
+console.log(user);
+
+const furit = ["hello", "hi", "hello"];
+const reult = furit.pop();
+console.log(reult);
+
+const ind = furit.indexOf(2);
+console.log(ind);
+
+const aa = ["a", "b"];
+const bb = ["c", "d"];
+const newArr = aa.concat(bb);
+*/
+
+// const num = [2, 8, 69, 7, 5];
+// const newNum = num.sort((a, b) => b - a);
+
+// console.log(newNum);
+
+
