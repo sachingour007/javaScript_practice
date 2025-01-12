@@ -19,11 +19,3 @@ const id = {
 };
 console.log(id);
 
-//String Methods
-
-let alfa = "Yes I am Alfa";
-// let newAlfa = alfa.slice(0, -6); It take the negative values.
-// let newAlfa = alfa.substring(0, 5); //similer to slice but not take the nagetive values;
-let newAlfa = alfa.indexOf("a"); //give index of first find element.
-
-console.log(newAlfa);
