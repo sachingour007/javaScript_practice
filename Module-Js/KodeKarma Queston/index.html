@@ -6,9 +6,73 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Kode Karma Question</h1>
+    <h1>Practice</h1>
     <!-- <script src="./script.js"></script> -->
      <!-- <script src="./curreingFunction.js"></script> -->
-      <script src="./this.js"></script>
+      <script src="./ArrayAndObject.js"></script>
 </body>
 </html>
+
+<!--
+let num = 9875;
+
+function reverse() {
+  let ans = 0;
+  while (num > 0) {
+    let rem = Math.floor(num % 10); //5
+    num = Math.floor(num / 10); //987
+    ans = ans * 10 + rem; //0 * 10 + 5 = 5
+  }
+  return ans;
+}
+console.log(reverse());
+
+function convert(mintues) {
+  console.log(mintues * 60);
+}
+convert(5);
+
+const createCounter = (n) => {
+  let counter = n;
+  function counterFun() {
+    return counter++;
+  }
+  counterFun();
+};
+
+const ans = createCounter(2);
+console.log(ans);
+// console.log(ans());
+// console.log(ans());
+// console.log(ans());
+
+let list = [1, 2, 3];
+/*
+ *Modifing the orignal list so its an impure function
+function arr(list, data) {
+  list.push(data);
+  return list;
+}
+*/
+
+//Pure Function not modifiy the old array return the new Arr.
+
+function arr(list, data) {
+  return [...list, data];
+}
+const newArr = arr(list, 6);
+console.log(newArr);
+console.log(list);
+
+const person = {
+  name: "alice",
+  greet: () => {
+    console.log(`hello ${this.name}`);
+    setTimeout(() => {
+      console.log("hello");
+    }, 1000);
+  },
+};
+
+person.greet.call(person.name, "sachin");
+-->
