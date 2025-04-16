@@ -116,3 +116,12 @@ tesla.batteryLife = 12;
 
 tesla.describe();
 
+const calculator = {
+  factor: 10,
+  multiply(n) {
+    console.log("Inside multiply:", this); // `this` ko log kar rahe hain
+    // return this.factor * n;
+  },
+};
+
+calculator.multiply(10);

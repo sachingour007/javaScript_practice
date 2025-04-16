@@ -21,3 +21,5 @@ const sum = (a, b) => {
 
 const abc = memoize(sum);
 console.log(abc(2,2));
+
+
