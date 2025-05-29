@@ -15,3 +15,4 @@ function squareOfNaturalNo(n) {
 console.log(squareOfNaturalNo(10000000000));
 
 //https://www.geeksforgeeks.org/logic-building-problems/
+
