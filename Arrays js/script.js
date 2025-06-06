@@ -29,3 +29,13 @@ function twoSum(num) {
 const ab = map(num, twoSum);
 console.log(ab);
 console.log(num);
+
+const arr = ["male", "Female", "others"];
+
+function validate(arr, val) {
+  const revert = arr.map((el) => el.includes(val));
+  // if(!["male", "Female", "others"].includes(val))
+  console.log(["male", "Female", "others"].includes(val));
+}
+
+validate(arr, "Female");
