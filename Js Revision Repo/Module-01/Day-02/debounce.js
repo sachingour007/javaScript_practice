@@ -1,9 +1,12 @@
 function debounce(fun, delay) {
   let timeId;
   return function (...args) {
+    console.log("clear befor");
     clearTimeout(timeId);
+    console.log("clear after");
     timeId = setTimeout(() => {
       fun.apply(this, args);
+      console.log("function run");
     }, delay);
   };
 }
