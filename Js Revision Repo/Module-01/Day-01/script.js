@@ -1,26 +1,19 @@
-var a = 10;
+const arr = [1, 2, 3, 4];
 
-function loobhai() {
-  for (var a = 0; a < 5; a++) {
-    console.log(a);
+function RepeatNumber(arr) {
+  const resultObj = {};
+
+  for (let key in arr) {
+    const aNum = arr[key];
+    if (resultObj[aNum]) {
+      return true;
+    } else {
+      resultObj[aNum] = true;
+    }
   }
-}
-loobhai();
+  console.log(resultObj);
 
-for (var a = 0; a < 5; a++) {
-  setTimeout(() => {
-    console.log(a);
-  }, 1000);
+  return false;
 }
 
-console.log(a);
-
-console.log(b);
-
-let b = 10;
-{
-  let b = 11;
-  console.log(b);
-}
-console.log(b);
-
+console.log(RepeatNumber(arr));
