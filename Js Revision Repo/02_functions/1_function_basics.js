@@ -14,4 +14,23 @@ const hello = function () {
 
 hello();
 
+//Named Function Expression
 
+const Namefunc = function cal() {
+  console.log("call");
+};
+
+Namefunc();
+
+//Arrow Function
+
+const sum = (a, b) => {
+  console.log(a + b);
+};
+sum(1, 2);
+
+//Immediately Invoked Function Expressions (IIFEs):
+
+(function () {
+  console.log("hello");
+})();
