@@ -34,3 +34,25 @@ sum(1, 2);
 (function () {
   console.log("hello");
 })();
+
+const arr = [1, 2, 3, 1, 1, 3];
+
+function goodPairs() {
+  const resultObj = {};
+  let count = 0;
+
+  for (let key of arr) {
+    const keyVal = key;
+    if (resultObj[keyVal]) {
+      count = count + resultObj[keyVal];
+      resultObj[keyVal]++;
+    } else {
+      resultObj[keyVal] = 1;
+    }
+  }
+}
+
+console.log(goodPairs(arr));
+
+
+
