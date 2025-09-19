@@ -1,12 +1,12 @@
 var num = 10;
 var num = 50;
-console.log(num);
+// console.log(num);
 num = 70;
-console.log(num);
+// console.log(num);
 
 let a = 20;
 a = 90;
-console.log(a);
+// console.log(a);
 // let a = 50;  => it Will give the Redeclared Error because we can't redeclare with same name in same scope.
 
 const ab = 30;
@@ -27,3 +27,7 @@ const ab = 30;
             -same as let in hoisted case.
             - we can't update and redinitilzed
  */
+
+
+// console.log(hello);
+let hello = 20;
