@@ -4,16 +4,16 @@ Ans:-
 
 A. Execution Context
 
-1. It’s the environment where JavaScript code is executed.
+    1. It’s the environment where JavaScript code is executed.
 
-2. Every time a function runs, a new execution context is created.
+    2. Every time a function runs, a new execution context is created.
 
-    It has two phases:
+        It has two phases:
 
-    * Memory Creation Phase → JS allocates memory for variables and functions.
-      (Variables = undefined, Functions = full definition)
+        * Memory Creation Phase → JS allocates memory for variables and functions.
+        (Variables = undefined, Functions = full definition)
 
-    * Execution Phase → Code runs line by line, and variables get actual values.
+        * Execution Phase → Code runs line by line, and variables get actual values.
 
 B. Lexical Environment
 
@@ -21,11 +21,11 @@ B. Lexical Environment
 
     2. It’s created along with the execution context.
 
-    It has:
+        It has:
 
-    * Environment Record → stores variable/function references.
+        * Environment Record → stores variable/function references.
 
-    * Outer Environment Reference → points to parent scope (for scope chain).
+        * Outer Environment Reference → points to parent scope (for scope chain).
 
 ## Q.2 What is closure in JavaScript? Can you explain how it works internally and give a real-world example where closures are useful?
 
