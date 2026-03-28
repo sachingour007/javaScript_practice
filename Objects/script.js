@@ -1,111 +1,49 @@
-/*
-const obj1 = {
-  name: "sach",
-  lastName: "gour",
-  city: "mumbai",
-};
-for (let key in obj1) {
-  console.log(key);
-}
+//----------Multiple Ways to Create a Objects---------//
 
-const obj2 = {
-  name: "sach",
-  lastName: "gour",
-  city: "mumbai",
+// 01. Object Literals
+
+const obj = {
+	name: "sachin",
+	age: 26,
+	add: "Bundi",
 };
 
+console.log(obj.__proto__);
+
+//02. Object Constructor
+
+const obj1 = new Object({ hero: "akshay", age: 26 });
 console.log(obj1);
-console.log(obj2);
 
-console.log(obj1 === obj2);
+// 03. ES6 Classes
 
-delete obj2.city;
-
-console.log(obj2);
-
-console.log("city" in obj1);
-
-const salaries = {
-  // jhon: 100,
-  // ann: 160,
-  // pete: 130,
-};
-
-function sum(obj) {
-  let ansSum = 0;
-
-  if (Object.keys(obj).length === "0") {
-    return ansSum;
-  }
-
-  for (const key in obj) {
-    ansSum += obj[key];
-  }
-  console.log(ansSum);
-
-  
-  for (const key in obj) {
-    console.log(obj[key]);
-  }
-  console.log(Object.values(obj)); //access the Value of Obj and return an Array.
-  console.log(Object.keys(obj)); //access the Keys of Obj and return an Array.
+class Person {
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
+	}
 }
-*/
 
-/*
-sum(salaries);
+const newObj = new Person("rahul", 26);
+console.log(newObj);
 
-const person = {
-  name: "hero",
-};
+// 04. Object.Create
 
-const permission1 = { canview: true };
-const permission2 = { canEdit: true };
+const personCount = Object.create({});
+console.log(personCount, "36");
 
-const newObject = Object.assign(person, permission1, permission2);
+//Function Constructor
 
-console.log(newObject);
-
-const arr = [1, 11, 12, 11, 11, 12];
-
-function countUniqueValues(arr) {
-  if (arr.length === 0) {
-    return 0;
-  }
-  let uniqueCount = [arr[0]];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] !== arr[i - 1]) {
-      uniqueCount.push(arr[i]);
-    }
-  }
-  return uniqueCount;
+function PersonDetails(name) {
+	this.name = name;
 }
-const ans = countUniqueValues(arr);
-console.log(ans);
 
-const user = {
-  name: "happy",
-  city: "mumbai",
-  mbo: 123456,
+//Here add the method via prototype every instance can use that method
+PersonDetails.prototype.sayHello = function () {
+	console.log(this.name);
 };
 
-console.log(user);
+const P1 = new PersonDetails("Ram");
+console.log(P1.sayHello());
 
-const furit = ["hello", "hi", "hello"];
-const reult = furit.pop();
-console.log(reult);
-
-const ind = furit.indexOf(2);
-console.log(ind);
-
-const aa = ["a", "b"];
-const bb = ["c", "d"];
-const newArr = aa.concat(bb);
-*/
-
-// const num = [2, 8, 69, 7, 5];
-// const newNum = num.sort((a, b) => b - a);
-
-// console.log(newNum);
-
-
+console.log(Object.getPrototypeOf(P1));
